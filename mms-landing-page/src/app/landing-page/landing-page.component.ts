@@ -10,7 +10,8 @@ export class LandingPageComponent {
 
   showWelcomeMessage() {
     if (this.userName) {
-      alert(`Welcome to MMS, ${this.userName}!`);
+      alert(`Welcome to MMS.`);
+      this.userName = '';
     } else {
       alert('Please enter your name.');
     }

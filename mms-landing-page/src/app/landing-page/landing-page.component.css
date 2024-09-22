@@ -1,27 +1,59 @@
 .landing-page {
     text-align: center;
-    padding: 50px;
-    background-color: #f5f5f5; /* Example background */
-    color: #333; /* Example text color */
+    padding: 100px 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text */
+    font-family: 'Arial', sans-serif; /* Use a clean font */
+  }
+  .image-section {
+    width: 100%;  /* Full width */
+    height: 800px; /* Adjust height based on your need */
+    background-image: url('https://static.wixstatic.com/media/a590e2_eb8db5bcdcb44b5199988c3a091be386~mv2.jpg/v1/fill/w_980,h_900,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a590e2_eb8db5bcdcb44b5199988c3a091be386~mv2.jpg');
+    background-size: cover;  /* The image will cover the entire div, may crop */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
   }
   
+  h1 {
+    font-size: 2.5em; /* Larger heading */
+    color: #1a1a1a; /* Darker text */
+    margin-bottom: 20px;
+  }
   input {
-    padding: 10px;
+    padding: 15px;
     margin-right: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #007bff; /* Blue border */
     border-radius: 5px;
+    width: 250px; /* Set width */
+    font-size: 1em;
   }
   
   button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff; /* Example button color */
-    color: white;
-    cursor: pointer;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Button color */
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s; /* Transition effect */
   }
   
   button:hover {
-    background-color: #0056b3; /* Darker button color on hover */
+    background-color: #0056b3; /* Darker blue on hover */
   }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2em; /* Responsive heading */
+    }
   
+    input, button {
+      width: 100%; /* Full width on small screens */
+      margin: 10px 0; /* Vertical spacing */
+    }
+  }
+  button:disabled {
+    background-color: #ccc; /* Light gray color for disabled button */
+    cursor: not-allowed;
+    text-emphasis-color: #f0f0f0;
+  }

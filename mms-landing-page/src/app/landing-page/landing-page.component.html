@@ -1,6 +1,7 @@
 <div class="landing-page">
     <h1>Welcome to Metal Management Solutions</h1>
     <input type="text" [(ngModel)]="userName" placeholder="Enter your name" />
-    <button (click)="showWelcomeMessage()">Submit</button>
+    <button (click)="showWelcomeMessage()" [disabled]="!userName">Submit</button>
   </div>
+  <div class="image-section"></div>
   
