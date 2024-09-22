@@ -34,11 +34,11 @@ To run this project locally, follow these steps:
    ```bash
    npm install
 
-4.**Start the development server:**
+4. **Start the development server:**
   ```bash
     ng serve
 
-5.**Open your browser and go to:**
+5. **Open your browser and go to:**
   ```bash
     [ng serve](http://localhost:4200/)
 
