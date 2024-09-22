@@ -38,12 +38,25 @@ To run this project locally, follow these steps:
   ```bash
     ng serve
 
-5. **Start the development server:**
-  ```bash
-    [ng serve](http://localhost:4200/)
+## Technologies Used
 
-### Technologies Used:
+### Frontend
 - **Angular**
-- **HTML5 & CSS3**
+- **HTML5**
+- **CSS3**
+
+### Programming Language
 - **TypeScript**
-- **GitHub pages for deployment**
+
+### Version Control & Deployment
+- **Git**
+- **GitHub**
+- **GitHub Pages**
+
+### Build Tools & Dependency Management
+- **Node.js**
+- **npm (Node Package Manager)**
+
+### Development Tools
+- **Angular CLI**
+
