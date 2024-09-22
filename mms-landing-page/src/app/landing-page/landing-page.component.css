@@ -3,7 +3,8 @@
     padding: 100px 20px;
     background-color: #f0f0f0; /* Light gray background */
     color: #333; /* Dark text */
-    font-family: 'Arial', sans-serif; /* Use a clean font */
+    font-weight: bold;
+    font-family: 'Aptos', sans-serif; /* Use a clean font */
   }
   .image-section {
     width: 100%;  /* Full width */
@@ -13,6 +14,16 @@
     background-position: center;  /* Centers the image */
     background-repeat: no-repeat; /* Prevents repeating */
   }
+  .top-left-logo {
+    position: absolute;
+    top: 10px; /* Adjust the distance from the top */
+    left: 10px; /* Adjust the distance from the left */
+  }
+  
+  .top-left-logo img {
+    width: 80px; /* Set the width of the image */
+    height: auto; /* Maintain the aspect ratio */
+  }  
   
   h1 {
     font-size: 2.5em; /* Larger heading */
@@ -22,7 +33,7 @@
   input {
     padding: 15px;
     margin-right: 10px;
-    border: 2px solid #007bff; /* Blue border */
+    border: 2px solid #D84727; /* Blue border */
     border-radius: 5px;
     width: 250px; /* Set width */
     font-size: 1em;
@@ -31,8 +42,8 @@
   button {
   padding: 15px 30px;
   border: none;
-  border-radius: 5px;
-  background-color: #007bff; /* Button color */
+  border-radius: 50px;
+  background-color: #080808; /* Button color */
   color: white;
   cursor: pointer;
   font-size: 1em;
@@ -40,7 +51,7 @@
   }
   
   button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #D84727; /* Darker blue on hover */
   }
   @media (max-width: 600px) {
     h1 {
