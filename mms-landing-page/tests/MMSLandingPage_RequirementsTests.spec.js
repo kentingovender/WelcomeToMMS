@@ -1,14 +1,24 @@
 const { test, expect } = require('@playwright/test');
 
-test('Verify Submit Button Presence', async ({ page }) => {
+let browser;
+
+test.beforeEach(async ({page, browser: provideBrowser}) => {
     await page.goto('https://kentingovender.github.io/WelcomeToMMS/browser/');
+    browser = provideBrowser;
+});
+
+test.afterAll(async () => {
+    console.log('Closing browser...');
+    await browser.close(); // Close the browser explicitly
+});
+
+test('Verify Submit Button Presence', async ({ page }) => {
 
     //Verify the submit button is present
     await expect(page.getByRole('button', { name: 'Submit' })).toBeVisible();
   });
 
 test('Submit Button Enabled Based on textbox Input', async ({ page }) => {
-  await page.goto('https://kentingovender.github.io/WelcomeToMMS/browser/');
 
   //Verify the submit button is disabled when no text entered
   await expect(page.getByRole('button', { name: 'Submit' })).toBeDisabled();
@@ -22,7 +32,6 @@ test('Submit Button Enabled Based on textbox Input', async ({ page }) => {
 });
 
 test('Submit Button Clicked Triggers Popup', async ({ page }) => {
-    await page.goto('https://kentingovender.github.io/WelcomeToMMS/browser/');
 
     // Enter name into textbox
     await page.getByPlaceholder('Enter your name').fill('John Doe');
@@ -49,7 +58,6 @@ test('Submit Button Clicked Triggers Popup', async ({ page }) => {
 });
 
 test('Validate Popup Message Content', async ({ page }) => {
-    await page.goto('https://kentingovender.github.io/WelcomeToMMS/browser/');
 
     // Enter name into textbox
     await page.getByPlaceholder('Enter your name').fill('John Doe');

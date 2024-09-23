@@ -1,7 +1,18 @@
 const { test, expect } = require('@playwright/test');
 
-test('Submit Button Disabled After Input Clear', async ({ page }) => {
+let browser;
+
+test.beforeEach(async ({page, browser: provideBrowser}) => {
     await page.goto('https://kentingovender.github.io/WelcomeToMMS/browser/');
+    browser = provideBrowser;
+});
+
+test.afterAll(async () => {
+    console.log('Closing browser...');
+    await browser.close(); // Close the browser explicitly
+});
+
+test('Submit Button Disabled After Input Clear', async ({ page }) => {
 
      //Enter name into textbox
     await page.getByPlaceholder('Enter your name').dblclick();
@@ -18,7 +29,6 @@ test('Submit Button Disabled After Input Clear', async ({ page }) => {
   });
 
 test('Textbox cleared after popup closed', async ({ page }) => {
-  await page.goto('https://kentingovender.github.io/WelcomeToMMS/browser/');
 
   //Enter invalid characters into textbox
   await page.getByPlaceholder('Enter your name').dblclick();
