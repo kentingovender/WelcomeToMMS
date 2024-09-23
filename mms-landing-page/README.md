@@ -22,10 +22,10 @@ To run this project locally, follow these steps:
 ### Installation
 
 1. **Clone the repository:**
-   git clone https://github.com/<your-username>/<repository-name>.git
+   git clone https://github.com/kentingovender/WelcomeToMMS.git
 
 2. **Navigate to the project directory:**
-   cd <repository-name>
+   cd WelcomeToMMS
 
 3. **Install the dependencies:**
    npm install
