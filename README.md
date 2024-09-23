@@ -9,9 +9,6 @@ This is a basic Angular application featuring a landing page where users can inp
 - design inspired by Metal Management Solutions.
 - Hosted on GitHub Pages.
 
-## Demo
-You can view the live demo of the app [here](#).
-
 ## Getting Started
 To run this project locally, follow these steps:
 
