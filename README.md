@@ -34,12 +34,13 @@ To run this project locally, follow these steps:
   ng serve
 
 5. **Open your browser and visit:**
+   https://kentingovender.github.io/WelcomeToMMS/browser/
 
-6. **Install VS Code:**
+7. **Install VS Code:**
 
-7. **Install playwright as extension on VS Code:**
+8. **Install playwright as extension on VS Code:**
 
-8. **playwright tests can be ran on VS Code:**
+9. **playwright tests can be ran on VS Code:**
    
 ## Technologies Used
 
