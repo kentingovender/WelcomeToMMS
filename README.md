@@ -16,6 +16,8 @@ To run this project locally, follow these steps:
 - **Node.js** (v14+)
 - **Angular CLI** (v12+)
 - **Git**
+- **VS Code**
+- **Playwright**
 
 ### Installation
 
@@ -32,6 +34,12 @@ To run this project locally, follow these steps:
   ng serve
 
 5. **Open your browser and visit:**
+
+6. **Install VS Code:**
+
+7. **Install playwright as extension on VS Code:**
+
+8. **playwright tests can be ran on VS Code:**
    
 ## Technologies Used
 
